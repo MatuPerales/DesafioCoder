@@ -1,0 +1,455 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background-image: url("../Imagenes/pexels-alex-conchillos-3648850.jpg");
+    background-size: cover;
+}
+body{
+    display: grid;
+    height: 100vh;
+    grid-template-rows: auto auto auto;
+}
+
+.face{
+    padding: 1px;
+    margin: 5px;
+}
+.tw{
+    padding: 1px;
+    margin: 5px;
+}
+
+.lorem{
+    color: darkcyan;
+    font-size: 20px;
+    margin-left: 10%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    inline-size: 80%;
+    text-align: center;
+
+}    
+.hombre{
+    color: darkcyan;
+    font-size: 30px;
+    margin-left: 38%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+
+}
+.mujer{
+    color: darkcyan;
+    font-size: 30px;
+    margin-left: 38%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.titulo{
+    color: darkcyan;
+    font-size: 23px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: grid;
+    justify-content: center;
+    
+   
+
+}
+.oferta{
+    color: cyan;
+    font-size: 45px;
+    border-top-width: 10px;
+    border-right-width: 5px;
+    border-bottom-width: 10px;
+    border-left-width: 5px;
+    padding: 60px;
+    margin-left: 27%;
+}
+.navegacion{
+    display: grid;
+    justify-content: flex-end;
+}
+.anchor{
+    color: darkslategray;
+    padding: 5px;
+    background-color: rgb(0, 255, 191);
+    display: flexbox;
+    flex-wrap: wrap;
+    grid-area: anchor;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+    
+
+
+}
+.imgPrincipal{
+    
+    display: grid;
+    justify-content: center;
+    padding: 10px;
+    
+}
+
+.listaimagenes {
+    width: auto;
+    height: auto;
+    display: flex;
+    overflow: hidden;
+    animation: slide 15s infinite alternate ease-in-out;
+}
+.listaimagenes ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+
+
+}
+.listaimagenes li{
+    list-style: none;
+    width: 100%;
+
+}
+.listaimagenes img{
+    width: 30%;
+    
+}
+@keyframes slide {
+    0% {margin-left: 0%;}
+    20% {margin-left: 0%;}
+
+    25% {margin-left: -40%;}
+    45% {margin-left: -40%;}
+
+    50% {margin-left: -60%;}
+    70% {margin-left: -60%;}
+
+
+}
+label{
+    color: white;
+    background-color: rgba(0, 185, 139, 0.979);
+    margin-left: 1%;
+}
+img{
+    max-height: 100%;
+    max-width: 100%;
+}
+.jordanOff{
+    height: 350px;
+    width: 650px;
+    margin-left: 23%;
+    display: grid;
+    justify-content: center;
+    padding: 10px;
+}
+.airmax{
+    height: 450px;
+    width: 450px;
+    margin-left: 30%;
+    display: grid;
+    justify-content: center;
+    padding: 10px;
+}
+.imgPrincipal{
+    height: 350px;
+    width: 650px;
+    margin-left: 27%;
+
+}
+
+.imagenes{
+    display: grid;
+    grid-column: auto;
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    width: 50px;
+
+}
+.footer{
+    display: grid;
+   justify-content: center;
+    background-color: black;
+}
+.creador{
+    display: grid;
+    justify-content: end;
+    color: white;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.terminos{
+    display: flexbox;
+    flex-direction: row;
+    color: white;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.encuentranos{
+    display: grid;
+    justify-content: center;
+}
+.contactenos{
+    display: grid;
+    justify-content: center;
+    
+}
+#talleNumeros{
+    
+    margin: 0 auto;
+    padding: 60px;
+    display: grid;
+    grid-template-areas:    'talles'
+                            'taller'
+                            'tallex'
+                            'tallez';
+    grid-template-rows: repeat(5vh 4);
+
+
+}
+.talle{
+    border: 2px solid white;
+    color: white;
+    text-align: center;
+    line-height: 120px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+
+}
+.talle39{
+    grid-area: talles;
+}
+.talle40{
+    grid-area: taller;
+
+}
+.talle41{
+    grid-area: tallex;
+}
+.talle42{
+    grid-area: tallez;
+}
+/* Medias queris*/
+@media screen and (mind-width: 780px) {
+    #talleNumeros{
+        margin: 0 auto;
+        padding: 60px;
+        display: grid;
+        grid-template-areas:    'talles'
+                                'taller'
+                                'tallex'
+                                'tallez';
+        grid-template-rows: repeat(5vh 4);
+        
+    }
+    .jordanOff{
+        height: 350px;
+        width: 650px;
+        margin-left: 23%;
+        display: grid;
+        justify-content: center;
+        padding: 10px;
+    }
+    .footer{
+        display: grid;
+       justify-content: center;
+        background-color: black;
+    }
+    .creador{
+        display: grid;
+        justify-content: end;
+        color: white;
+        font-size: 15px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    }
+    .terminos{
+        display: flexbox;
+        flex-direction: row;
+        color: white;
+        font-size: 15px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .encuentranos{
+        display: grid;
+        justify-content: center;
+    }
+    .contactenos{
+        display: grid;
+        justify-content: center;
+        
+    }
+    .anchor{
+        color: darkslategray;
+        padding: 5px;
+        background-color: rgb(0, 255, 191);
+        display: flexbox;
+        flex-wrap: wrap;
+        grid-area: anchor;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       }
+    .navegacion{
+        display: grid;
+        justify-content: flex-end;
+    }
+    .hombre{
+        color: darkcyan;
+        font-size: 30px;
+        margin-left: 38%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        
+    
+    }
+    .face{
+        padding: 1px;
+        margin: 5px;
+    }
+    .tw{
+        padding: 1px;
+        margin: 5px;
+    }
+    
+    .lorem{
+        color: darkcyan;
+        font-size: 20px;
+        margin-left: 10%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        inline-size: 80%;
+        text-align: center;
+    
+    }
+    .titulo{
+        color: darkcyan;
+        font-size: 23px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        display: grid;
+        justify-content: center;
+        
+       
+    
+    }
+    .imgPrincipal{
+        border-top-width: 20px;
+        border-right-width: 5px;
+        border-bottom-width: 10px;
+        border-left-width: 5px;
+        display: grid;
+        justify-content: center;
+        padding: 10px;
+        
+    }
+    
+    
+}
+
+@media screen and (max-width: 380px){
+    #talleNumeros{
+        margin: 0 auto;
+        padding: 60px;
+        display: grid;
+        grid-template-areas:    'talles'
+                                'taller'
+                                'tallex'
+                                'tallez';
+        grid-template-rows: repeat(5vh 4);
+        
+    }
+    .jordanOff{
+        height: 350px;
+        width: 650px;
+        margin-left: 23%;
+        display: grid;
+        justify-content: center;
+        padding: 10px;
+    }
+    .footer{
+        display: grid;
+       justify-content: center;
+        background-color: black;
+    }
+    .creador{
+        display: grid;
+        justify-content: end;
+        color: white;
+        font-size: 15px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    }
+    .terminos{
+        display: flexbox;
+        flex-direction: row;
+        color: white;
+        font-size: 15px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .encuentranos{
+        display: grid;
+        justify-content: center;
+    }
+    .contactenos{
+        display: grid;
+        justify-content: center;
+        
+    }
+    .anchor{
+        color: darkslategray;
+        padding: 5px;
+        background-color: rgb(0, 255, 191);
+        display: flexbox;
+        flex-wrap: wrap;
+        grid-area: anchor;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       }
+    .navegacion{
+        display: grid;
+        justify-content: flex-end;
+    }
+    .hombre{
+        color: darkcyan;
+        font-size: 30px;
+        margin-left: 38%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        
+    
+    }
+    .face{
+        padding: 1px;
+        margin: 5px;
+    }
+    .tw{
+        padding: 1px;
+        margin: 5px;
+    }
+    
+    .lorem{
+        color: darkcyan;
+        font-size: 20px;
+        margin-left: 10%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        inline-size: 80%;
+        text-align: center;
+    
+    }
+    .titulo{
+        color: darkcyan;
+        font-size: 23px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        display: grid;
+        justify-content: center;
+        
+       
+    
+    }
+    .imgPrincipal{
+        border-top-width: 20px;
+        border-right-width: 5px;
+        border-bottom-width: 10px;
+        border-left-width: 5px;
+        display: grid;
+        justify-content: center;
+        padding: 10px;
+        
+    }
+}
